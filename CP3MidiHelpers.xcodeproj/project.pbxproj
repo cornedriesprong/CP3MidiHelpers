@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970536AB2483CB3F005E9811 /* CPMidiEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 970536A92483CB3F005E9811 /* CPMidiEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970536AC2483CB3F005E9811 /* CPMidiEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 970536AA2483CB3F005E9811 /* CPMidiEvent.m */; };
+		970536B42483CBE0005E9811 /* CPNoteEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 970536AE2483CBE0005E9811 /* CPNoteEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970536B52483CBE0005E9811 /* CPPitchBendEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 970536AF2483CBE0005E9811 /* CPPitchBendEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970536B62483CBE0005E9811 /* CPControlEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 970536B02483CBE0005E9811 /* CPControlEvent.m */; };
+		970536B72483CBE0005E9811 /* CPNoteEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 970536B12483CBE0005E9811 /* CPNoteEvent.m */; };
+		970536B82483CBE0005E9811 /* CPControlEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 970536B22483CBE0005E9811 /* CPControlEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970536B92483CBE0005E9811 /* CPPitchBendEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 970536B32483CBE0005E9811 /* CPPitchBendEvent.m */; };
 		9777AE6C24812F4D00942355 /* CP3MidiHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9777AE6224812F4D00942355 /* CP3MidiHelpers.framework */; };
 		9777AE7124812F4D00942355 /* CP3MidiHelpersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777AE7024812F4D00942355 /* CP3MidiHelpersTests.m */; };
 		9777AE7324812F4D00942355 /* CP3MidiHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE6524812F4D00942355 /* CP3MidiHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +45,7 @@
 		9777AEB4248130BE00942355 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777AEB3248130BE00942355 /* Helpers.m */; };
 		978E647324813CA900D6A65F /* CPAudioUnitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE8224812FFD00942355 /* CPAudioUnitDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		978E647724813DB800D6A65F /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AEB5248130C400942355 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97F1397F249259A1009881EF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1397E249259A1009881EF /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +59,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		970536A92483CB3F005E9811 /* CPMidiEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPMidiEvent.h; sourceTree = "<group>"; };
+		970536AA2483CB3F005E9811 /* CPMidiEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPMidiEvent.m; sourceTree = "<group>"; };
+		970536AE2483CBE0005E9811 /* CPNoteEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPNoteEvent.h; sourceTree = "<group>"; };
+		970536AF2483CBE0005E9811 /* CPPitchBendEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPPitchBendEvent.h; sourceTree = "<group>"; };
+		970536B02483CBE0005E9811 /* CPControlEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPControlEvent.m; sourceTree = "<group>"; };
+		970536B12483CBE0005E9811 /* CPNoteEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPNoteEvent.m; sourceTree = "<group>"; };
+		970536B22483CBE0005E9811 /* CPControlEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPControlEvent.h; sourceTree = "<group>"; };
+		970536B32483CBE0005E9811 /* CPPitchBendEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPPitchBendEvent.m; sourceTree = "<group>"; };
 		9777AE6224812F4D00942355 /* CP3MidiHelpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CP3MidiHelpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9777AE6524812F4D00942355 /* CP3MidiHelpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CP3MidiHelpers.h; sourceTree = "<group>"; };
 		9777AE6624812F4D00942355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +100,7 @@
 		9777AEAC2481307000942355 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
 		9777AEB3248130BE00942355 /* Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
 		9777AEB5248130C400942355 /* Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		97F1397E249259A1009881EF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +122,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970536AD2483CB69005E9811 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				970536A92483CB3F005E9811 /* CPMidiEvent.h */,
+				970536AA2483CB3F005E9811 /* CPMidiEvent.m */,
+				970536B22483CBE0005E9811 /* CPControlEvent.h */,
+				970536B02483CBE0005E9811 /* CPControlEvent.m */,
+				970536AE2483CBE0005E9811 /* CPNoteEvent.h */,
+				970536B12483CBE0005E9811 /* CPNoteEvent.m */,
+				970536AF2483CBE0005E9811 /* CPPitchBendEvent.h */,
+				970536B32483CBE0005E9811 /* CPPitchBendEvent.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		9777AE5824812F4D00942355 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +164,8 @@
 				9777AE7F24812F7800942355 /* CPBaseAudioUnit.m */,
 				9777AEB5248130C400942355 /* Helpers.h */,
 				9777AEB3248130BE00942355 /* Helpers.m */,
+				97F1397E249259A1009881EF /* Helpers.swift */,
+				970536AD2483CB69005E9811 /* Models */,
 				9777AEA82481305F00942355 /* TPCircularBuffer */,
 				9777AE832481303900942355 /* TAAE */,
 				9777AE6624812F4D00942355 /* Info.plist */,
@@ -201,6 +236,10 @@
 				9777AEAE2481307000942355 /* TPCircularBuffer+AudioBufferList.h in Headers */,
 				9777AEAF2481307000942355 /* TPCircularBuffer.h in Headers */,
 				9777AE9D2481305300942355 /* AEAudioThreadEndpoint.h in Headers */,
+				970536B52483CBE0005E9811 /* CPPitchBendEvent.h in Headers */,
+				970536B42483CBE0005E9811 /* CPNoteEvent.h in Headers */,
+				970536AB2483CB3F005E9811 /* CPMidiEvent.h in Headers */,
+				970536B82483CBE0005E9811 /* CPControlEvent.h in Headers */,
 				9777AE982481305300942355 /* AEWeakRetainingProxy.h in Headers */,
 				9777AE972481305300942355 /* AEUtilities.h in Headers */,
 				978E647724813DB800D6A65F /* Helpers.h in Headers */,
@@ -258,6 +297,7 @@
 				TargetAttributes = {
 					9777AE6124812F4D00942355 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					9777AE6A24812F4D00942355 = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -307,6 +347,8 @@
 			files = (
 				9777AEB4248130BE00942355 /* Helpers.m in Sources */,
 				9777AE9C2481305300942355 /* AEMainThreadEndpoint.m in Sources */,
+				970536AC2483CB3F005E9811 /* CPMidiEvent.m in Sources */,
+				970536B72483CBE0005E9811 /* CPNoteEvent.m in Sources */,
 				9777AEA42481305300942355 /* AEManagedValue.m in Sources */,
 				9777AE962481305300942355 /* AETime.m in Sources */,
 				9777AEA22481305300942355 /* AEWeakRetainingProxy.m in Sources */,
@@ -315,6 +357,9 @@
 				9777AEB02481307000942355 /* TPCircularBuffer.c in Sources */,
 				9777AE992481305300942355 /* AETypes.m in Sources */,
 				9777AE9F2481305300942355 /* AEUtilities.m in Sources */,
+				970536B92483CBE0005E9811 /* CPPitchBendEvent.m in Sources */,
+				97F1397F249259A1009881EF /* Helpers.swift in Sources */,
+				970536B62483CBE0005E9811 /* CPControlEvent.m in Sources */,
 				9777AE8124812F7800942355 /* CPBaseAudioUnit.m in Sources */,
 				9777AE9E2481305300942355 /* AEMessageQueue.m in Sources */,
 				9777AEA32481305300942355 /* AEAudioThreadEndpoint.m in Sources */,
@@ -459,6 +504,7 @@
 		9777AE7724812F4D00942355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5GWBH83EBX;
@@ -477,6 +523,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -484,6 +532,7 @@
 		9777AE7824812F4D00942355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5GWBH83EBX;
@@ -502,6 +551,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -509,6 +559,7 @@
 		9777AE7A24812F4D00942355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWBH83EBX;
 				INFOPLIST_FILE = CP3MidiHelpersTests/Info.plist;
@@ -526,6 +577,7 @@
 		9777AE7B24812F4D00942355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GWBH83EBX;
 				INFOPLIST_FILE = CP3MidiHelpersTests/Info.plist;

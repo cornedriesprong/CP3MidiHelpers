@@ -33,6 +33,20 @@ typedef struct MIDIEvent {
     bool isQueued;
 } MIDIEvent;
 
+typedef struct BeatPosition {
+    int beat;
+    int subtick;
+} BeatPosition;
+
+typedef struct PlayingNote {
+    int pitch;
+    int beat;
+    int subtick;
+    int channel;
+    int destination;
+    bool hasStopped;
+} PlayingNote;
+
 void processEventList(const AURenderEvent *realtimeEventListHead);
 double samplesPerSubtick(double sampleRate, double tempo);
 double sampleTimeForNextSubtick(double sampleRate, double tempo, AUEventSampleTime sampleTime, double beatPosition);
