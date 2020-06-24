@@ -76,7 +76,7 @@
 }
 
 - (void)testSequencer {
-    
+    // check if sequencer produces equidistant timestamps
     double sampleRate = arc4random_uniform(48000 - 44100) + 44100;
     double tempo = arc4random_uniform(320) + 80;
     double currentBeatPosition = 0.0;
