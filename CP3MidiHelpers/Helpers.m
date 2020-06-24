@@ -16,7 +16,7 @@ void processEventList(const AURenderEvent *realtimeEventListHead) {
             AUMIDIEvent *midiEvent = (AUMIDIEvent*)realtimeEventListHead;
             uint8_t status = midiEvent->data[0] & 0xf0;
             if (status == NOTE_OFF || (status == NOTE_ON && midiEvent->data[2] == 0)) {
-                
+            
             } else if (status == NOTE_ON) {
                 
             } else if (status == PROGRAM_CHANGE) {
@@ -37,7 +37,12 @@ double samplesPerSubtick(double sampleRate, double tempo) {
 
 double sampleTimeForNextSubtick(double sampleRate, double tempo, AUEventSampleTime sampleTime, double beatPosition) {
     
-    double transportTimeToNextBeat = beatPosition == 0 ? 1 : ceil(beatPosition) - beatPosition;
+    double transportTimeToNextBeat;
+    if (ceil(beatPosition) == beatPosition) {
+        transportTimeToNextBeat = 1;
+    } else {
+        transportTimeToNextBeat = ceil(beatPosition) - beatPosition;
+    }
     double samplesToNextBeat = transportTimeToNextBeat * samplesPerBeat(sampleRate, tempo);
     double nextBeatSampleTime = sampleTime + samplesToNextBeat;
     int subticksLeftInBeat = PPQ - subtickCount(beatPosition);
@@ -48,7 +53,7 @@ int subtickCount(double beatPosition) {
     
     double integral;
     double fractional = modf(beatPosition, &integral);
-    return (PPQ / 100.0) * (fractional * 100.0);
+    return ceil(PPQ * fractional);
 }
 
 void getMidiEventsFromBuffer(MIDIEvent *result[], TPCircularBuffer *buffer) {
