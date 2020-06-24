@@ -47,8 +47,16 @@ typedef struct PlayingNote {
     bool hasStopped;
 } PlayingNote;
 
-void processEventList(const AURenderEvent *realtimeEventListHead);
-double samplesPerSubtick(double sampleRate, double tempo);
-double sampleTimeForNextSubtick(double sampleRate, double tempo, AUEventSampleTime sampleTime, double beatPosition);
-int subtickCount(double beatPosition);
-void getMidiEventsFromBuffer(MIDIEvent *result[], TPCircularBuffer *buffer);
+// compiler directive to make C functions callable from (Objective-)C++
+#ifdef __cplusplus
+extern "C" {
+#endif
+    void processEventList(const AURenderEvent *realtimeEventListHead);
+    double samplesPerBeat(double sampleRate, double tempo);
+    double samplesPerSubtick(double sampleRate, double tempo);
+    double sampleTimeForNextSubtick(double sampleRate, double tempo, AUEventSampleTime sampleTime, double beatPosition);
+    int subtickCount(double beatPosition);
+    void getMidiEventsFromBuffer(MIDIEvent *result[], TPCircularBuffer *buffer);
+#ifdef __cplusplus
+}
+#endif
