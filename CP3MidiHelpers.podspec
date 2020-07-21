@@ -15,6 +15,4 @@ Pod::Spec.new do |s|
   s.source_files       = 'CP3MidiHelpers/**/*.{m,h,swift}'
   s.ios.deployment_target = '11.0'
   s.ios.framework      = 'AudioToolbox'
-
-  s.dependency 'TheAmazingAudioEngine', '1.5.8'
 end
