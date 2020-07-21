@@ -7,7 +7,7 @@
 //
 
 #import <AudioToolbox/AudioToolbox.h>
-#import "AEMessageQueue.h"
+#import <TheAmazingAudioEngine/TheAmazingAudioEngine.h>
 #import "CPAudioUnitDelegate.h"
 #import "Helpers.h"
 

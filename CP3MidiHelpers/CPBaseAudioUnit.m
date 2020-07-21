@@ -84,19 +84,19 @@ AudioStreamBasicDescription asbd; // local copy of the asbd that the render bloc
     } else {
         return NO;
     }
-    
+
     if (self.MIDIOutputEventBlock) {
         _outputEventBlock = self.MIDIOutputEventBlock;
     } else {
         return NO;
     }
-    
+
     if (self.transportStateBlock) {
         _transportStateBlock = self.transportStateBlock;
     } else {
         return NO;
     }
-    
+
     if (self.scheduleMIDIEventBlock) {
         _scheduleMIDIEventBlock = self.scheduleMIDIEventBlock;
     } else {
