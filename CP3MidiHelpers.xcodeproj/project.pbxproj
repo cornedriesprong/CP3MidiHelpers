@@ -38,6 +38,10 @@
 		97816F2924C743B900AB6711 /* AEMainThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 97816F1724C743B900AB6711 /* AEMainThreadEndpoint.m */; };
 		97816F2A24C743B900AB6711 /* AEArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 97816F1824C743B900AB6711 /* AEArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97816F2B24C743B900AB6711 /* AEAudioThreadEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 97816F1924C743B900AB6711 /* AEAudioThreadEndpoint.m */; };
+		97816F3124C7449A00AB6711 /* TPCircularBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 97816F2D24C7449A00AB6711 /* TPCircularBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97816F3224C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.c in Sources */ = {isa = PBXBuildFile; fileRef = 97816F2E24C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.c */; };
+		97816F3324C7449A00AB6711 /* TPCircularBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 97816F2F24C7449A00AB6711 /* TPCircularBuffer.c */; };
+		97816F3424C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.h in Headers */ = {isa = PBXBuildFile; fileRef = 97816F3024C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		978E647324813CA900D6A65F /* CPAudioUnitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE8224812FFD00942355 /* CPAudioUnitDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F1397F249259A1009881EF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1397E249259A1009881EF /* Helpers.swift */; };
 /* End PBXBuildFile section */
@@ -88,6 +92,10 @@
 		97816F1724C743B900AB6711 /* AEMainThreadEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEMainThreadEndpoint.m; sourceTree = "<group>"; };
 		97816F1824C743B900AB6711 /* AEArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEArray.h; sourceTree = "<group>"; };
 		97816F1924C743B900AB6711 /* AEAudioThreadEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEAudioThreadEndpoint.m; sourceTree = "<group>"; };
+		97816F2D24C7449A00AB6711 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		97816F2E24C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "TPCircularBuffer+AudioBufferList.c"; sourceTree = "<group>"; };
+		97816F2F24C7449A00AB6711 /* TPCircularBuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = TPCircularBuffer.c; sourceTree = "<group>"; };
+		97816F3024C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
 		97F1397E249259A1009881EF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +160,7 @@
 				9777AE7E24812F7800942355 /* CPBaseAudioUnit.h */,
 				9777AE7F24812F7800942355 /* CPBaseAudioUnit.m */,
 				97F1397E249259A1009881EF /* Helpers.swift */,
+				97816F2C24C7449A00AB6711 /* TPCircularBuffer */,
 				97816F0724C743B900AB6711 /* TAAE */,
 				970536AD2483CB69005E9811 /* Models */,
 				9777AE6624812F4D00942355 /* Info.plist */,
@@ -200,6 +209,17 @@
 			path = TAAE;
 			sourceTree = "<group>";
 		};
+		97816F2C24C7449A00AB6711 /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				97816F2D24C7449A00AB6711 /* TPCircularBuffer.h */,
+				97816F2E24C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.c */,
+				97816F2F24C7449A00AB6711 /* TPCircularBuffer.c */,
+				97816F3024C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.h */,
+			);
+			path = TPCircularBuffer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -221,6 +241,8 @@
 				97816F2224C743B900AB6711 /* AETypes.h in Headers */,
 				970536B52483CBE0005E9811 /* CPPitchBendEvent.h in Headers */,
 				970536B42483CBE0005E9811 /* CPNoteEvent.h in Headers */,
+				97816F3124C7449A00AB6711 /* TPCircularBuffer.h in Headers */,
+				97816F3424C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.h in Headers */,
 				970536AB2483CB3F005E9811 /* CPMidiEvent.h in Headers */,
 				970536B82483CBE0005E9811 /* CPControlEvent.h in Headers */,
 			);
@@ -337,6 +359,8 @@
 				970536B92483CBE0005E9811 /* CPPitchBendEvent.m in Sources */,
 				97816F2B24C743B900AB6711 /* AEAudioThreadEndpoint.m in Sources */,
 				97F1397F249259A1009881EF /* Helpers.swift in Sources */,
+				97816F3324C7449A00AB6711 /* TPCircularBuffer.c in Sources */,
+				97816F3224C7449A00AB6711 /* TPCircularBuffer+AudioBufferList.c in Sources */,
 				970536B62483CBE0005E9811 /* CPControlEvent.m in Sources */,
 				9777AE8124812F7800942355 /* CPBaseAudioUnit.m in Sources */,
 			);

@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.source             = { :git => 'https://github.com/cornedriesprong/CP3MidiHelpers.git', :branch => 'master' }
   s.source_files       = 'CP3MidiHelpers/**/*.{m,h,swift}'
   s.ios.deployment_target = '11.0'
-  s.ios.framework      = 'AudioToolbox'
+  s.ios.framework      = 'AudioToolbox', 'AVFoundation'
 end
