@@ -7,7 +7,6 @@
 //
 
 #import "CPBaseAudioUnit.h"
-#import <AVFoundation/AVFoundation.h>
 
 @implementation CPBaseAudioUnit
 

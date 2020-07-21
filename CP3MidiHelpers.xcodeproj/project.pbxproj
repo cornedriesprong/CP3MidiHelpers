@@ -20,9 +20,7 @@
 		9777AE7324812F4D00942355 /* CP3MidiHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE6524812F4D00942355 /* CP3MidiHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9777AE8024812F7800942355 /* CPBaseAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE7E24812F7800942355 /* CPBaseAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9777AE8124812F7800942355 /* CPBaseAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777AE7F24812F7800942355 /* CPBaseAudioUnit.m */; };
-		9777AEB4248130BE00942355 /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9777AEB3248130BE00942355 /* Helpers.m */; };
 		978E647324813CA900D6A65F /* CPAudioUnitDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AE8224812FFD00942355 /* CPAudioUnitDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		978E647724813DB800D6A65F /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 9777AEB5248130C400942355 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		97F1397F249259A1009881EF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F1397E249259A1009881EF /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +52,6 @@
 		9777AE7E24812F7800942355 /* CPBaseAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPBaseAudioUnit.h; sourceTree = "<group>"; };
 		9777AE7F24812F7800942355 /* CPBaseAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPBaseAudioUnit.m; sourceTree = "<group>"; };
 		9777AE8224812FFD00942355 /* CPAudioUnitDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPAudioUnitDelegate.h; sourceTree = "<group>"; };
-		9777AEB3248130BE00942355 /* Helpers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helpers.m; sourceTree = "<group>"; };
-		9777AEB5248130C400942355 /* Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
 		97F1397E249259A1009881EF /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,8 +114,6 @@
 				9777AE8224812FFD00942355 /* CPAudioUnitDelegate.h */,
 				9777AE7E24812F7800942355 /* CPBaseAudioUnit.h */,
 				9777AE7F24812F7800942355 /* CPBaseAudioUnit.m */,
-				9777AEB5248130C400942355 /* Helpers.h */,
-				9777AEB3248130BE00942355 /* Helpers.m */,
 				97F1397E249259A1009881EF /* Helpers.swift */,
 				970536AD2483CB69005E9811 /* Models */,
 				9777AE6624812F4D00942355 /* Info.plist */,
@@ -150,7 +144,6 @@
 				970536B42483CBE0005E9811 /* CPNoteEvent.h in Headers */,
 				970536AB2483CB3F005E9811 /* CPMidiEvent.h in Headers */,
 				970536B82483CBE0005E9811 /* CPControlEvent.h in Headers */,
-				978E647724813DB800D6A65F /* Helpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9777AEB4248130BE00942355 /* Helpers.m in Sources */,
 				970536AC2483CB3F005E9811 /* CPMidiEvent.m in Sources */,
 				970536B72483CBE0005E9811 /* CPNoteEvent.m in Sources */,
 				970536B92483CBE0005E9811 /* CPPitchBendEvent.m in Sources */,
@@ -285,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -346,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -408,6 +402,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "/Users/cp3/Development/CP3MidiHelpers/CP3MidiHelpers/TAAE/**";
 				INFOPLIST_FILE = CP3MidiHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -437,6 +432,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "/Users/cp3/Development/CP3MidiHelpers/CP3MidiHelpers/TAAE/**";
 				INFOPLIST_FILE = CP3MidiHelpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

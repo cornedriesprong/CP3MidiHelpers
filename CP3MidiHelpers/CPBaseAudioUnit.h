@@ -9,7 +9,6 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <TheAmazingAudioEngine/TheAmazingAudioEngine.h>
 #import "CPAudioUnitDelegate.h"
-#import "Helpers.h"
 
 @interface CPBaseAudioUnit : AUAudioUnit {
     @public AEMessageQueue *_messageQueue;

@@ -18,7 +18,6 @@ FOUNDATION_EXPORT const unsigned char CP3MidiHelpersVersionString[];
 
 #import <CP3MidiHelpers/CPAudioUnitDelegate.h>
 #import <CP3MidiHelpers/CPBaseAudioUnit.h>
-#import <CP3MidiHelpers/Helpers.h>
 #import <CP3MidiHelpers/CPMidiEvent.h>
 #import <CP3MidiHelpers/CPControlEvent.h>
 #import <CP3MidiHelpers/CPNoteEvent.h>
