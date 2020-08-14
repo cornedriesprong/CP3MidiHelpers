@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.authors            = { 'Corné Driesprong' => 'corne@cp3.io' }
   s.license            = { :type => 'MIT', :text => license }
   s.source             = { :git => 'https://github.com/cornedriesprong/CP3MidiHelpers.git', :branch => 'master' }
-  s.source_files       = 'CP3MidiHelpers/**/*.{m,h,swift}'
+  s.source_files       = 'CP3MidiHelpers/**/*.{c,m,h,swift}'
   s.ios.deployment_target = '11.0'
   s.ios.framework      = 'AudioToolbox', 'AVFoundation'
 end
