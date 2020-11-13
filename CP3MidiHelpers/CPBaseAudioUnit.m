@@ -43,7 +43,7 @@ AudioStreamBasicDescription asbd; // local copy of the asbd that the render bloc
     
     self.maximumFramesToRender = 256;
     
-    AVAudioFormat *defaultFormat = [[AVAudioFormat alloc] initStandardFormatWithSampleRate:48000.0 channels:2];
+    AVAudioFormat *defaultFormat = [[AVAudioFormat alloc] initStandardFormatWithSampleRate:44100.0 channels:2];
     asbd = *defaultFormat.streamDescription;
     
     NSError* error;
